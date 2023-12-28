@@ -5,21 +5,21 @@ This project includes a [dev container](https://containers.dev/), which lets you
 You can use the dev container configuration in this folder to build and run the app without needing to install any of its tools locally! You can use it in [GitHub Codespaces](https://github.com/features/codespaces) or the [VS Code Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
 ## GitHub Codespaces
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/langchain-ai/langchain)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/gitchrisqueen/langchain)
 
 You may use the button above, or follow these steps to open this repo in a Codespace:
-1. Click the **Code** drop-down menu at the top of https://github.com/langchain-ai/langchain.
+1. Click the **Code** drop-down menu at the top of https://github.com/gitchrisqueen/langchain.
 1. Click on the **Codespaces** tab.
 1. Click **Create codespace on master** .
 
 For more info, check out the [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace#creating-a-codespace).
   
 ## VS Code Dev Containers
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/langchain-ai/langchain)
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/gitchrisqueen/langchain)
 
 Note: If you click the link above you will open the main repo (langchain-ai/langchain) and not your local cloned repo. This is fine if you only want to run and test the library, but if you want to contribute you can use the  link below and replace with your username and cloned repo name: 
 ```
-https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/<yourusername>/<yourclonedreponame>
+https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/gitchrisqueen/langchain
 
 ```
 Then you will have a local cloned repo where you can contribute and then create pull requests.
