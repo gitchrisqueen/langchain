@@ -11,7 +11,7 @@ from langchain_community.utilities.usemotion import UseMotionAPIWrapper
 from langchain_community.tools.usemotion.modes import *
 
 
-class MotionToolkit(BaseToolkit):
+class UseMotionToolkit(BaseToolkit):
     """Motion Toolkit.
 
     *Security Note*: This toolkit contains tools that can read and modify
@@ -24,7 +24,7 @@ class MotionToolkit(BaseToolkit):
     tools: List[BaseTool] = []
 
     @classmethod
-    def from_motion_api_wrapper(cls, motion_api_wrapper: UseMotionAPIWrapper) -> "MotionToolkit":
+    def from_motion_api_wrapper(cls, motion_api_wrapper: UseMotionAPIWrapper) -> "UseMotionToolkit":
         operations: List[Dict] = [
             {
                 "mode": TASKS.UPDATE,
@@ -141,6 +141,7 @@ class MotionToolkit(BaseToolkit):
                 description=action["description"],
                 mode=action["mode"],
                 api_wrapper=motion_api_wrapper,
+                #handle_tool_error=True,
                 handle_tool_error=_handle_error,
             )
             for action in operations
@@ -159,9 +160,10 @@ def mode_to_title(mode: str):
 def _handle_error(error: ToolException) -> str:
     return (
             "The following errors occurred during tool execution:"
-            + error.args[0]
+            #+ error.args[0]
+            + str(error)
             #+ traceback.format_exc()  # TODO: Take this out after debugging
-            + "Please fix and validation errors you can."
+            + "Please fix any validation errors you can."
             + "Otherwise, Please try another tool."
     )
 

@@ -5,9 +5,10 @@ all: help
 
 # Define a variable for the test file path.
 TEST_FILE ?= tests/unit_tests/
+TEST_PATTERN ?= test_
 
 test:
-	poetry run pytest $(TEST_FILE)
+	poetry run pytest $(TEST_FILE) -k $(TEST_PATTERN) -s
 
 tests:
 	poetry run pytest $(TEST_FILE)
